@@ -1,21 +1,42 @@
-
 import Seo from '../components/common/Seo';
-import { useTranslation } from "react-i18next";
+import {useTranslation} from 'react-i18next';
+import {Typewriter} from 'react-simple-typewriter';
+import {useTheme} from '../context/ThemeContext';
 
 export default function Home() {
-  const { t } = useTranslation();
+  const {t} = useTranslation();
+  const {theme} = useTheme();
+
+  const titleArray = [
+    t('frontendDeveloper'),
+    t('softwareEngineer'),
+    t('computerAddict'),
+    t('techEnthusiast'),
+  ];
+
   return (
-    <section className="mt-20">
+    <section className="mt-20 home">
       <Seo title="Home | Nishant Padhi | Senior Frontend Engineer" />
-      <h2 className="text-4xl font-bold">{t("homeHeadline")}</h2>
-      <div className="mt-4 max-w-3/4 text-justify">
-        <p>{t("home1")}</p>
-        <p className="mt-4">{t("home2")}</p>
-        <p className="mt-4">{t("home3")}</p>
-        <p className="mt-4">{t("home4")}</p>
-        <p className="mt-4">{t("home5")}</p>
-        ...
+      <div>
+        <h4 className={`${theme === 'dark' ? '' : 'dark'}`}>
+          {t('homeTitle')}
+        </h4>
+        <h1 className={`${theme === 'dark' ? '' : 'dark'}`}>{t('name')}</h1>
+        <span className={`${theme === 'dark' ? '' : 'dark'}`}>
+          <Typewriter
+            words={titleArray}
+            loop={0}
+            cursor
+            cursorStyle="|"
+            typeSpeed={40}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </span>
+        <p className={`mt-4 ${theme === 'dark' ? '' : 'dark'}`}>{t('subTitle')}</p>
+        <p className={`${theme === 'dark' ? '' : 'dark'}`}>{t('subTitle2')}</p>
+        <p className={`${theme === 'dark' ? '' : 'dark'}`}>{t('subTitle3')}</p>
       </div>
     </section>
-  )
+  );
 }

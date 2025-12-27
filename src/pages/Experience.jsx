@@ -33,7 +33,7 @@ export default function Education() {
   return (
     <section className="mt-20">
       <Seo title="Experience | Nishant Padhi | Senior Frontend Engineer" />
-      <h2 className="text-4xl font-bold">{t('experienceHeadline')}</h2>
+      <h2 className="text-4xl font-bold headLine">{t('experienceHeadline')}</h2>
       <div className="mt-4">
         <Chrono
           items={experienceList}

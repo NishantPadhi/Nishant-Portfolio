@@ -31,8 +31,8 @@ export default function Education() {
   return (
     <section className="mt-20">
       <Seo title="Education | Nishant Padhi | Senior Frontend Engineer" />
-      <h2 className="text-4xl font-bold">{t('educationHeadline')}</h2>
-      <div className="mt-4">
+      <h2 className="text-4xl font-bold headLine">{t('educationHeadline')}</h2>
+      <div className="mt-4 text-18">
         <Chrono
           items={educationList}
           mode="VERTICAL_ALTERNATING"
