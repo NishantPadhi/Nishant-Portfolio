@@ -1,5 +1,6 @@
 
-import Seo from '../components/common/Seo'
+import Seo from '../components/common/Seo';
+
 export default function Projects() {
   return (
     <section className="mt-20 grid md:grid-cols-2 gap-6">
