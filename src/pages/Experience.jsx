@@ -2,6 +2,7 @@ import Seo from '../components/common/Seo';
 import {useTranslation} from 'react-i18next';
 import {Chrono} from 'react-chrono';
 import {useTheme} from '../context/ThemeContext';
+import HeadLine from '../components/common/Headline';
 
 export default function Education() {
   const {t} = useTranslation();
@@ -33,12 +34,12 @@ export default function Education() {
   return (
     <section className="mt-20">
       <Seo title="Experience | Nishant Padhi | Senior Frontend Engineer" />
-      <h2 className="text-4xl font-bold headLine">{t('experienceHeadline')}</h2>
-      <div className="mt-4">
+      <HeadLine title={t('experienceHeadline')} />
+      <div className={`mt-4 ${theme}`}>
         <Chrono
           items={experienceList}
           mode="VERTICAL_ALTERNATING"
-          disableToolbar={false}
+          disableToolbar={true}
           darkMode={theme !== 'dark'}
           enableDarkToggle={true}
           key={theme}
