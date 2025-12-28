@@ -94,3 +94,22 @@ div.card-description {
 .text-18 {
   font-size: 18px;
 }
+
+.divider {
+  background-color: #7364d0;
+  height: 6px;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #7364d0;
+}
+
+.dark > [class^="SearchInput-"] {
+  color: black
+}
+
+.light [class^="SearchInput-"] {
+  color: white
+}
