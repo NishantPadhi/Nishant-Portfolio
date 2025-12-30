@@ -113,3 +113,17 @@ div.card-description {
 .light [class^="SearchInput-"] {
   color: white
 }
+
+.backColor-light {
+  background-color: #fff;
+  color: black;
+}
+
+.backColor-dark {
+  background-color: #111827;
+  color: white;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
