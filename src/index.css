@@ -127,3 +127,39 @@ div.card-description {
 .flex-1 {
   flex-grow: 1;
 }
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-light {
+  border-color: #6cabdae6;
+}
+
+.border-dark {
+  border-color: #0a255f;
+}
+
+.bg-light {
+  background-color: #6cabdae6;
+  color: #101827
+}
+
+.bg-dark {
+  background-color: #0a255f;
+  color: #ffffff;
+}
+
+.margin-dialog {
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.w-21rem {
+  width: 21rem;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
