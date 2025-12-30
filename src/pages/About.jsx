@@ -15,7 +15,7 @@ export default function About() {
         <p className="mt-4">{t('home3')}</p>
         <p className="mt-4">{t('home4')}</p>
         <p className="mt-4">{t('home6')}</p>
-        <p className="mt-8 flex gap-4">
+        <p className="mt-8 mb-16 flex gap-4">
           <Square />
           <Square />
           <Square />

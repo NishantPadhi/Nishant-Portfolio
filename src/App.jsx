@@ -1,12 +1,12 @@
-
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/common/Navbar'
-import Home from './pages/Home'
-import Education from './pages/Education'
-import Projects from './pages/Projects'
+import {Routes, Route} from 'react-router-dom';
+import Navbar from './components/common/Navbar';
+import Home from './pages/Home';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import ChatButton from './components/common/ChatButton';
 
 export default function App() {
   return (
@@ -20,6 +20,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ChatButton />
     </div>
-  )
+  );
 }
