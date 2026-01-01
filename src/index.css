@@ -61,6 +61,7 @@ div.card-description {
   color: #D3D3D3;
   font-size: 75px;
   margin: 0;
+  line-height: 80px !important;
 }
 
 .home h1.dark {
@@ -74,7 +75,7 @@ div.card-description {
   margin: 0;
 }
 
-.home span.dark > span {
+.home span.dark>span {
   color: #656468;
 }
 
@@ -106,7 +107,7 @@ div.card-description {
   background-color: #7364d0;
 }
 
-.dark > [class^="SearchInput-"] {
+.dark>[class^="SearchInput-"] {
   color: black
 }
 
@@ -157,9 +158,14 @@ div.card-description {
 }
 
 .w-21rem {
-  width: 21rem;
+  width: 24rem;
 }
 
 .mr-20 {
   margin-right: 20px;
+}
+
+.rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }

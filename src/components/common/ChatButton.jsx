@@ -95,7 +95,12 @@ export default function ChatbotPopover() {
         </div>
 
         <div className="p-4 text-sm text-gray-600">
-          👋 Hi! How can I help you today?
+          👋 Hi! I'm Virtual Nishant. I'm here to help you explore Sumat's
+          portfolio and experience! 🚀 Here's what I can do for you: - 📄 Send
+          Resume: Just ask, and I'll email it to you instantly. 🤝 Connect: I
+          can notify Nishant if you'd like to collaborate or hire him. 💻 Projects
+          & Skills: Ask me about his tech stack or specific project details. How
+          can I help you today?
         </div>
 
         <div className="p-3 border-t text-right">
