@@ -2,6 +2,7 @@ import Seo from '../components/common/Seo';
 import {useTranslation} from 'react-i18next';
 import {Typewriter} from 'react-simple-typewriter';
 import {useTheme} from '../context/ThemeContext';
+import WelcomeBubble from '../components/common/WelcomeBubble';
 
 export default function Home() {
   const {t} = useTranslation();
@@ -21,7 +22,10 @@ export default function Home() {
         <h4 className={`${theme === 'dark' ? '' : 'dark'}`}>
           {t('homeTitle')}
         </h4>
-        <h1 className={`${theme === 'dark' ? '' : 'dark'}`}>{t('name')}</h1>
+        <div className="flex items-center gap-4">
+          <h1 className={`${theme === 'dark' ? '' : 'dark'}`}>{t('name')}</h1>
+          <WelcomeBubble />
+        </div>
         <span className={`${theme === 'dark' ? '' : 'dark'}`}>
           <Typewriter
             words={titleArray}
@@ -33,7 +37,9 @@ export default function Home() {
             delaySpeed={1000}
           />
         </span>
-        <p className={`mt-4 ${theme === 'dark' ? '' : 'dark'}`}>{t('subTitle')}</p>
+        <p className={`mt-4 ${theme === 'dark' ? '' : 'dark'}`}>
+          {t('subTitle')}
+        </p>
         <p className={`${theme === 'dark' ? '' : 'dark'}`}>{t('subTitle2')}</p>
         <p className={`${theme === 'dark' ? '' : 'dark'}`}>{t('subTitle3')}</p>
       </div>
