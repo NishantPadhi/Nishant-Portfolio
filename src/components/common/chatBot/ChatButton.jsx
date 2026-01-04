@@ -1,11 +1,12 @@
 import {useEffect, useRef, useState} from 'react';
 import imagepath from '/images/chatImage.svg';
 import lightImage from '/images/chatImageLight.svg';
-import {useTheme} from '../../context/ThemeContext';
+import {useTheme} from '../../../context/ThemeContext';
 import deleteDark from '/images/deleteDark.svg';
 import deleteLight from '/images/deleteLight.svg';
 import trashDark from '/images/trashDark.svg';
 import trashLight from '/images/trashLight.svg';
+import ChatBox from './ChatBox';
 
 const ChatButton = () => {
   const {theme} = useTheme();
@@ -37,7 +38,6 @@ export default function ChatbotPopover() {
         setOpen(false);
       }
     }
-
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
@@ -93,24 +93,7 @@ export default function ChatbotPopover() {
             </div>
           </div>
         </div>
-
-        <div className="p-4 text-sm text-gray-600">
-          👋 Hi! I'm Virtual Nishant. I'm here to help you explore Sumat's
-          portfolio and experience! 🚀 Here's what I can do for you: - 📄 Send
-          Resume: Just ask, and I'll email it to you instantly. 🤝 Connect: I
-          can notify Nishant if you'd like to collaborate or hire him. 💻 Projects
-          & Skills: Ask me about his tech stack or specific project details. How
-          can I help you today?
-        </div>
-
-        <div className="p-3 border-t text-right">
-          <button
-            onClick={() => setOpen(false)}
-            className="text-xs text-gray-500 hover:text-gray-700"
-          >
-            Close
-          </button>
-        </div>
+        <ChatBox />
       </div>
 
       {/* Toggle Button */}
