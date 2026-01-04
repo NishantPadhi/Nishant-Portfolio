@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import ChatButton from './components/common/ChatButton';
+import ChatButton from './components/common/chatBot/ChatButton';
 
 export default function App() {
   return (

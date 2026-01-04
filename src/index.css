@@ -169,3 +169,56 @@ div.card-description {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+/* .bg-dark {
+  background-color: #06162c;
+}
+
+.bg-light {
+  background-color: rgb(255, 251, 245);
+} */
+
+.input-dark {
+  background-color: #0e2746;
+  color: #6cabdae6;
+  border: 1px solid #7cb3de;
+}
+
+.inputDiv-dark {
+  background-color: #031a35;
+  border-top: 1px solid #7cb3de;
+}
+
+.input-light {
+  background-color: #07375be6;
+  color: #fff;
+  border: 1px solid #103d60;
+}
+
+.inputBox::placeholder {
+  color: #fff;
+}
+
+.inputDiv-light {
+  background-color: #366dac;
+  border-top: 1px solid #103d60;
+}
+
+.rounded-b-lg {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.nishant {
+  justify-content: start;
+  background-color: #031a35;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.user {
+  justify-content: end;
+  background-color: #7cb3de;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
