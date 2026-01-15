@@ -222,3 +222,17 @@ div.card-description {
   border-top-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
+.nishant-light {
+  justify-content: start;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.user-light {
+  justify-content: end;
+  background-color: #d8d9da;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
