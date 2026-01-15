@@ -60,7 +60,7 @@ const ChatBox = () => {
             key={`${m.value}-${i}`}
             className={`flex ${m.sender === 'Nishant' ? 'justify-start' : 'justify-end'} m-4`}
           >
-            <div className={`flex ${m.sender === 'Nishant' ? 'justify-start nishant' : 'justify-end user'} p-4`}>{m.value}</div>
+            <div className={`flex ${m.sender === 'Nishant' ? (isDarkTheme ? 'nishant' : 'nishant-light') : (isDarkTheme ? 'user' : 'user-light')} p-4`}>{m.value}</div>
           </div>
         ))}
         <div ref={endRef} />
