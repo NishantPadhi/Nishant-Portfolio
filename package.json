@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "i18next": "^23.0.0",
+    "openai": "^6.16.0",
     "react": "^18.2.0",
     "react-chrono": "^2.9.1",
     "react-dom": "^18.2.0",
